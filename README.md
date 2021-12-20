@@ -1,2 +1,6 @@
-# samuel-de-oliveira.github.io
-This is my main site, Here have my portifolio and things what I have made.
+# This is my site repository!
+
+Here I will put things about me like: contact, portifolio,
+and outhers things.
+
+#### Made by Samuel de Oliveira
