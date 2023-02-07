@@ -1,4 +1,27 @@
+* {
+	margin: 0;
+}
+
+header {
+	background: black;
+	position: sticky;
+	top: 0;
+}
+
+nav, ul {
+	display: flex;
+	flex-direction: row;
+}
+
+nav {
+	padding: 8px;
+}
+
+nav li {
+	padding: 0 5px;
+}
+
 body {
-	background: #333333;
+	background: #444444;
 	color: white;
 }
