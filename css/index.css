@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
 * {
 	margin: 0;
+	font-family: 'Noto Sans', sans-serif;
 }
 
 header {
@@ -8,18 +11,33 @@ header {
 	top: 0;
 }
 
+ul {
+	list-style: none;
+	padding: 0;
+}
+
+/* Navbar */
 nav, ul {
 	display: flex;
 	flex-direction: row;
+} nav a {
+	color: white;
+	text-decoration: none;
+	padding: 3px 5px;
+	cursor: pointer;
+} nav a:hover {
+	color: #BABABA;
+	background: #111111;
+} nav a:active {
+	color: #222222;
+	background: black;
+} .logo {
+	font-size: 22px;
+} nav {
+	padding: 8px 6px;
+	justify-content: space-between;
 }
 
-nav {
-	padding: 8px;
-}
-
-nav li {
-	padding: 0 5px;
-}
 
 body {
 	background: #444444;
