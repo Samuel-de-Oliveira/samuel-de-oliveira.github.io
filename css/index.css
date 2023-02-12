@@ -54,6 +54,10 @@ nav, ul {
 
 /* Corpo do site */
 body {
-	background: #444444;
 	color: white;
+}
+
+/* Parte principal do site */
+main {
+	background: #111a11;
 }
