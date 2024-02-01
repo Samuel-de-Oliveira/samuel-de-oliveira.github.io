@@ -1,0 +1,23 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+* {
+   margin:  0;
+   padding: 0;
+}
+
+body {
+   font-size:  14pt;
+   background: #585858;
+}
+
+div#embreve {
+   color: #59ff52;
+   font-size: 120pt;
+   font-family: "Ubuntu";
+}
+
+div#embreve:hover {
+   color: #f952ff;
+   transition-duration: 0.4s;
+}
