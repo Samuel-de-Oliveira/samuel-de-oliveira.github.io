@@ -11,12 +11,32 @@ body {
    background: #585858;
 }
 
+/* Footer e Heading */
+header {
+   background: black;
+}
+footer {
+   color: white;
+}
+
+/* Mensagem de direitos reservados */
+p#copyright {
+   font-size: 11pt;
+   color: white;
+   padding-left: 12px;
+}
+p#copyright:hover {
+   font-size: 13pt;
+   color: #AAAAAA;
+   transition-duration: 0.3s;
+}
+
+/* Mensagem de "Em breve" */
 div#embreve {
    color: #59ff52;
    font-size: 120pt;
    font-family: "Ubuntu";
 }
-
 div#embreve:hover {
    color: #f952ff;
    transition-duration: 0.4s;
