@@ -1,1 +1,1 @@
-// Nada aqui
+alert("Site em construção!")

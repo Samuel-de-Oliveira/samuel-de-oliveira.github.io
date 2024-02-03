@@ -11,13 +11,24 @@ body {
    background: #585858;
 }
 
+h1 {
+   font-size: 35pt;
+}
+
+h2 {
+   font-size: 18pt;
+}
+
+
 /* Footer e Heading */
 header {
    background: black;
+   padding: 2px;
 }
 footer {
    color: white;
    background: black;
+   padding: 2px;
 }
 
 /* Mensagem de direitos reservados */
@@ -33,12 +44,11 @@ p#copyright:hover {
 }
 
 /* Titulo do inicio da página */
-h1#titulo {
+.titulo {
    color: #59ff52;
-   font-size: 32pt;
    font-family: "Ubuntu";
 }
-h1#titulo:hover {
+.titulo:hover {
    color: #f952ff;
    transition-duration: 0.4s;
 }
