@@ -17,6 +17,7 @@ header {
 }
 footer {
    color: white;
+   background: black;
 }
 
 /* Mensagem de direitos reservados */
@@ -26,18 +27,18 @@ p#copyright {
    padding-left: 12px;
 }
 p#copyright:hover {
-   font-size: 13pt;
+   font-size: 12pt;
    color: #AAAAAA;
-   transition-duration: 0.3s;
+   transition-duration: 0.2s;
 }
 
-/* Mensagem de "Em breve" */
-div#embreve {
+/* Titulo do inicio da página */
+h1#titulo {
    color: #59ff52;
-   font-size: 120pt;
+   font-size: 32pt;
    font-family: "Ubuntu";
 }
-div#embreve:hover {
+h1#titulo:hover {
    color: #f952ff;
    transition-duration: 0.4s;
 }
