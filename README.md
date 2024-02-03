@@ -1,10 +1,9 @@
-# This is my own site repository!
+# Meu curículo online 🌐
 
-Here I will put things about me, like: contacts, portifolio,
-and others things.
+Esse site apenas serve de apresentação para meu trabalho e o que posso fazer.
+Esse site estásendo foi feito com o passo a passo dessa playlist no [Youtube](https://www.youtube.com/watch?v=d3Wy1H-ZiMU&list=PLJIP7GdByOytTaX6zHOm2lcfrvUg80mju&index=3)
+.
 
-# Esse é o repositório do meu site
+Link rápido para o [site](https://samuel-de-oliveira.github.io).
 
-Aqui vou colocar coisas sobre mim, como: contatos, portifólio e outras coisas.
-
-- Made by Samuel de Oliveira | 2022
+Feito por mim, Samuel de Oliveira 2024
