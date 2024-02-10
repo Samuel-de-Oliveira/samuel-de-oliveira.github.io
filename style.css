@@ -52,3 +52,15 @@ p#copyright:hover {
    color: #f952ff;
    transition-duration: 0.4s;
 }
+
+/* Listas de informações */
+ul {
+   padding-top:    5px;
+   padding-bottom: 5px;
+   font-family:    "Ubuntu";
+   color: white;
+}
+ul li {
+   padding-left: 14px;
+   padding-bottom: 4px;
+}
