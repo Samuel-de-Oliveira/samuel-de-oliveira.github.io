@@ -30,6 +30,11 @@ footer {
    background: black;
    padding: 2px;
 }
+footer a:link, a:visited {
+   color: white;
+   padding-left: 12px;
+   cursor: pointer;
+}
 
 /* Mensagem de direitos reservados */
 p#copyright {
