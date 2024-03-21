@@ -1,24 +1,39 @@
 /* Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
 
+/* Corpo do Site */
 * {
    margin:  0;
    padding: 0;
 }
-
 body {
    font-size:  14pt;
    background: #585858;
 }
 
+/* Títulos */
 h1 {
    font-size: 35pt;
 }
-
 h2 {
    font-size: 18pt;
 }
 
+/* Sections */
+section#endereco {
+   font-size: 11pt;
+   font-family: "Ubuntu";
+}
+section#endereco::after{
+   font-size: 11pt;
+   font-family: "Ubuntu";
+   transition-duration: 0.1s;
+}
+section#endereco:hover {
+   font-size: 13pt;
+   padding: 1px;
+   transition-duration: 0.6s;
+}
 
 /* Footer e Heading */
 header {
