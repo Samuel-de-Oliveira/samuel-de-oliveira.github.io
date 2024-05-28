@@ -4,12 +4,15 @@
 		<title>Samuel de Oliveira</title>
 		<meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <!-- Bootstrap -->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
       <link href="style.css" rel="stylesheet">
 	</head>
 	<body>
       <!-- Cabeçalho -->
       <header>
-         <h1 class="titulo">Olá, me chamo Samuel!</h1>
+         <h1 class="titulo text-center">Olá, me chamo Samuel!</h1>
          <nav>
             <ul>
                <li><a href="#info-pessoais">Informações Pessoais</a></li>
@@ -23,63 +26,73 @@
 
       <!-- Parte principal -->
       <main>
-         <!-- Informações pessoais -->
-         <section id="info-pessoais">
-            <h2 class="titulo">Informações pessoais</h2>
-            <ul>
-               <li><b>Gênero:</b> Masculino</li>
-               <li><b>Idade:</b> 19 Anos</li>
-               <li><b>Estado Civil:</b> Solteiro</li>
-               <li><b>Cidade:</b> Arapiraca</li>
-               <li><b>Estado:</b> Alagoas</li>
-            </ul>
-         </section>
+         <div class="container text-center">
+            <div class="row">
+               <!-- Informações pessoais -->
+               <section class="col" id="info-pessoais">
+                  <h2 class="titulo">Informações pessoais</h2>
+                  <ul>
+                     <li><b>Gênero:</b> Masculino</li>
+                     <li><b>Idade:</b> 19 Anos</li>
+                     <li><b>Estado Civil:</b> Solteiro</li>
+                     <li><b>Cidade:</b> Arapiraca</li>
+                     <li><b>Estado:</b> Alagoas</li>
+                  </ul>
+               </section>
 
-         <!-- Informações de contato -->
-         <section id="info-contato">
-            <h2 class="titulo">Informações de contato</h2>
-            <ul>
-               <li><b>Email:</b> samwolfg12@gmail.com</li>
-               <li><b>Github:</b> <a href="https://github.com/Samuel-de-Oliveira">@Samuel-de-Oliveira</a></li>
-               <li><b>LinkedIn:</b> <a href="https://linkedin.com/in/samuel-de-oliveira-b10284203">@Samuel-de-Oliveira</a></li>
-               <li><b>Whatsapp:</b> (82) 99834-9253</li>
-            </ul>
-         </section>
+               <!-- Informações de contato -->
+               <section class="col" id="info-contato">
+                  <h2 class="titulo">Informações de contato</h2>
+                  <ul>
+                     <li><b>Email:</b> samwolfg12@gmail.com</li>
+                     <li><b>Github:</b> <a href="https://github.com/Samuel-de-Oliveira">@Samuel-de-Oliveira</a></li>
+                     <li><b>LinkedIn:</b> <a href="https://linkedin.com/in/samuel-de-oliveira-b10284203">@Samuel-de-Oliveira</a></li>
+                     <li><b>Whatsapp:</b> (82) 99834-9253</li>
+                  </ul>
+               </section>
+            </div>
+         </div>
 
-         <!-- Formação acadêmica -->
-         <section id="info-academica">
-            <h2 class="titulo">Minha grade acadêmica</h2>
-            <ul>
-               <li><b>Em breve...</b></li>
-            </ul>
-         </section>
+         <div class="container text-center">
+            <div class="row">
+               <!-- Formação acadêmica -->
+               <section class="col" id="info-academica">
+                  <h2 class="titulo">Minha grade acadêmica</h2>
+                  <ul>
+                     <li><b>Em breve...</b></li>
+                  </ul>
+               </section>
 
-         <!-- Portifólio -->
-         <section id="portifolio">
-            <h2 class="titulo">Meus portifólios</h2>
-            <ul>
-               <li><b>Em breve...</b></li>
-            </ul>
-         </section>
+               <!-- Portifólio -->
+               <section class="col" id="portifolio">
+                  <h2 class="titulo">Meus portifólios</h2>
+                  <ul>
+                     <li><b>Em breve...</b></li>
+                  </ul>
+               </section>
+            </div>
+         </div>
 
          <!-- Informações de experiência -->
          <section id="experiencia">
-            <h2 class="titulo">Minha experiência</h2>
-            <ul>
-               <li>
-                  <b>Auxiliar de Marketing (Design gráfico).</b>
-                  <ul>
-                     <li>
-                        Esse é meu trabalho atual, trabalhando na
-                        <a href="https://popularalimentos.com.br">Indústria alimentícia Popular LTDA. (INAP)</a>
-                        atuando como designer gráfico e jovem aprendiz. Dentro do trabalho
-                        desenvolvo banners, camisas, adesivos e dentre outros tipos de artes
-                        para eventos patrocinados da empresa ou até artes internas como fardamento
-                        e placas de segurança.
-                     </li>
-                  </ul>
-               </li>
-            </ul>
+            <div class="container text-center">
+               <h2 class="titulo">Minha experiência</h2>
+               <ul>
+                  <li>
+                     <b>Auxiliar de Marketing (Design gráfico).</b>
+                     <ul>
+                        <li>
+                           Esse é meu trabalho atual, trabalhando na
+                           <a href="https://popularalimentos.com.br">Indústria alimentícia Popular LTDA. (INAP)</a>
+                           atuando como designer gráfico e jovem aprendiz. Dentro do trabalho
+                           desenvolvo banners, camisas, adesivos e dentre outros tipos de artes
+                           para eventos patrocinados da empresa ou até artes internas como fardamento
+                           e placas de segurança.
+                        </li>
+                     </ul>
+                  </li>
+               </ul>
+            </div>
          </section>
       </main>
       

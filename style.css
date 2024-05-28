@@ -1,4 +1,7 @@
 body {
-   font-family: sans-serif;
-   font-size: 14pt;
+   font-size: 16pt;
+}
+
+.titulo {
+   font-family: "Ubuntu";   
 }
