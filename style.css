@@ -1,7 +1,34 @@
 body {
-   font-size: 16pt;
+  font-size: 16pt;
+  background: #efffa7;
+}
+
+.col-md-6 {
+  background: #869e44;
+  border: 10px solid #efffa7;
+  border-radius: 10px;
 }
 
 .titulo {
-   font-family: "Ubuntu";   
+  font-family: "Ubuntu";
 }
+
+ul {
+  list-style: none;
+}
+
+footer, header {
+  background: #627e23;
+  color: white;
+}
+footer a, header a {
+  color: #cccccc;
+  text-decoration: none;
+}
+footer a:hover, header a:hover {
+  color: #969696;
+  text-decoration: underline;
+  transition-duration: 0.3s;
+}
+
+/*# sourceMappingURL=style.css.map */

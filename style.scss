@@ -1,0 +1,37 @@
+$main-color0: #efffa7;
+$main-color1: #ccdf86;
+$main-color2: #a9bf65;
+$main-color3: #869e44;
+$main-color4: #627e23;
+
+body {
+  font-size: 16pt;
+  background: $main-color0;
+}
+
+.col-md-6 {
+  background: $main-color3;
+  border: 10px solid $main-color0;
+  border-radius: 10px;
+}
+
+.titulo {
+   font-family: "Ubuntu";   
+}
+
+ul {
+   list-style: none;
+}
+
+footer, header {
+  background: $main-color4;
+  color: white;
+  a {
+    color: #cccccc;
+    text-decoration: none;
+  } a:hover {
+    color: #969696;
+    text-decoration: underline;
+    transition-duration: 0.3s;
+  }
+}
