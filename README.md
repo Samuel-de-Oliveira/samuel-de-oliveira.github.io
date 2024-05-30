@@ -1,9 +1,11 @@
 # Meu curículo online 🌐
 
-Esse site apenas serve de apresentação para meu trabalho e o que posso fazer.
-Esse site estásendo foi feito com o passo a passo dessa playlist no [Youtube](https://www.youtube.com/watch?v=d3Wy1H-ZiMU&list=PLJIP7GdByOytTaX6zHOm2lcfrvUg80mju&index=3)
-.
+🇧🇷 Esse site apenas serve de apresentação para meu trabalho e o que posso fazer.
+Foi feto com HTML e Sass CSS.
 
-Link rápido para o [site](https://samuel-de-oliveira.github.io).
+🇬🇧 This site serves only to introduce my work and what I can do.
+Was made with HTML and Sass CSS.
 
-Feito por mim, Samuel de Oliveira 2024
+Fast link to the [site](https://samuel-de-oliveira.github.io).
+
+Samuel de Oliveira - 2024
