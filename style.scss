@@ -4,15 +4,36 @@ $main-color2: #a9bf65;
 $main-color3: #869e44;
 $main-color4: #627e23;
 
+* {
+  margin:  0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-size: 16pt;
   background: $main-color0;
+  font-family: "system-ui";
 }
 
-.col-md-6 {
+.bloco {
+  padding: 10px;
+  margin: 8px;
   background: $main-color3;
-  border: 10px solid $main-color0;
   border-radius: 10px;
+  color: black;
+
+  a {
+    color: #474747;
+    text-decoration: none;
+  } a:hover {
+    color: #cccccc;
+    text-decoration: underline;
+    transition-duration: 0.3s;
+  }
 }
 
 .titulo {
@@ -23,8 +44,45 @@ ul {
    list-style: none;
 }
 
-footer, header {
+header {
   background: $main-color4;
+  padding: 16px;
+  color: white;
+
+  h1 {
+    padding: 3px;
+  }
+
+  a {
+    color: black;
+    text-decoration: none;
+  } a:hover {
+    color: white; 
+    text-decoration: underline; 
+    transition-duration: 0.2s;
+  }
+
+  nav {
+    ul {
+      display: flex;
+      li {
+      background: $main-color2;
+      padding: 7px;
+      border-radius: 5px;
+      margin-left:  15px;
+      margin-right: 15px;
+      } li:hover {
+        background: $main-color3;
+        color: white;
+        transition-duration: 0.2s;
+      }
+    }
+  }
+}
+
+footer {
+  background: $main-color4;
+  padding: 16px;
   color: white;
   a {
     color: #cccccc;
