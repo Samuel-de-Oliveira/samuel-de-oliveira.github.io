@@ -21,6 +21,10 @@ body {
   font-family: "Montserrat", "sans-serif";
 }
 
+body::-webkit-scrollbar {
+  display: none;
+}
+
 .bloco {
   padding: 12px;
   margin: 8px;
@@ -46,6 +50,7 @@ body {
 .titulo {
    font-family: "Ubuntu", "sans-serif"; 
    font-weight: 700;
+   text-align: center;
 }
 
 .container {
@@ -64,7 +69,7 @@ header {
 
   h1 {
     padding: 3px;
-    padding-bottom: 9px;
+    padding-bottom: 12px;
   }
 
   a {
