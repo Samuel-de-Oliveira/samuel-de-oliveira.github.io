@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
 $main-color0: #efffa7;
-$main-color1: #ccdf86;
+$main-color1: #e0d084; // Cor reversa de: #ccdf86
 $main-color2: #a9bf65;
-$main-color3: #869e44;
+$main-color3: #7d722b; // Cor reversa de: #869e44
 $main-color4: #627e23;
 
 * {
@@ -16,28 +18,39 @@ html {
 body {
   font-size: 16pt;
   background: $main-color0;
-  font-family: "system-ui";
+  font-family: "Montserrat", "sans-serif";
 }
 
 .bloco {
-  padding: 10px;
+  padding: 12px;
   margin: 8px;
   background: $main-color3;
   border-radius: 10px;
-  color: black;
+  color: white;
+
+  ul {
+    padding: 7px;
+    font-size: 14.8pt;
+  }
 
   a {
-    color: #474747;
+    color: #cccccc;
     text-decoration: none;
   } a:hover {
-    color: #cccccc;
+    color: $main-color1;
     text-decoration: underline;
-    transition-duration: 0.3s;
+    transition-duration: 0.5s;
   }
 }
 
 .titulo {
-   font-family: "Ubuntu";   
+   font-family: "Ubuntu", "sans-serif"; 
+   font-weight: 700;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 50vw 50vw;
 }
 
 ul {
@@ -51,6 +64,7 @@ header {
 
   h1 {
     padding: 3px;
+    padding-bottom: 9px;
   }
 
   a {
@@ -84,6 +98,9 @@ footer {
   background: $main-color4;
   padding: 16px;
   color: white;
+  text-align: center;
+  font-size: 20pt;
+
   a {
     color: #cccccc;
     text-decoration: none;

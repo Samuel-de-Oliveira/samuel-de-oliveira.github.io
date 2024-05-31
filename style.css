@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -10,28 +11,38 @@ html {
 body {
   font-size: 16pt;
   background: #efffa7;
-  font-family: "system-ui";
+  font-family: "Montserrat", "sans-serif";
 }
 
 .bloco {
-  padding: 10px;
+  padding: 12px;
   margin: 8px;
-  background: #869e44;
+  background: #7d722b;
   border-radius: 10px;
-  color: black;
+  color: white;
+}
+.bloco ul {
+  padding: 7px;
+  font-size: 14.8pt;
 }
 .bloco a {
-  color: #474747;
+  color: #cccccc;
   text-decoration: none;
 }
 .bloco a:hover {
-  color: #cccccc;
+  color: #e0d084;
   text-decoration: underline;
-  transition-duration: 0.3s;
+  transition-duration: 0.5s;
 }
 
 .titulo {
-  font-family: "Ubuntu";
+  font-family: "Ubuntu", "sans-serif";
+  font-weight: 700;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 50vw 50vw;
 }
 
 ul {
@@ -45,6 +56,7 @@ header {
 }
 header h1 {
   padding: 3px;
+  padding-bottom: 9px;
 }
 header a {
   color: black;
@@ -66,7 +78,7 @@ header nav ul li {
   margin-right: 15px;
 }
 header nav ul li:hover {
-  background: #869e44;
+  background: #7d722b;
   color: white;
   transition-duration: 0.2s;
 }
@@ -75,6 +87,8 @@ footer {
   background: #627e23;
   padding: 16px;
   color: white;
+  text-align: center;
+  font-size: 20pt;
 }
 footer a {
   color: #cccccc;
