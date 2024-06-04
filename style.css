@@ -50,6 +50,18 @@ body::-webkit-scrollbar {
   grid-template-columns: 50vw 50vw;
 }
 
+.bloco#sobre {
+  display: grid;
+  grid-template-columns: 65vw 35vw;
+}
+.bloco#sobre #minha-imagem {
+  background: #627e23;
+  border-radius: 10px;
+}
+.bloco#sobre img {
+  height: 20%;
+}
+
 ul {
   list-style: none;
 }
