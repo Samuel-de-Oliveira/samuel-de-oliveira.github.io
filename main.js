@@ -1,1 +1,1 @@
-alert("Em construção! Atualizado: 31-05-2024")
+alert("Em construção! Atualizado: 05-06-2024")

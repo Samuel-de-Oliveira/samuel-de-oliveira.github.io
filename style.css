@@ -19,7 +19,7 @@ body::-webkit-scrollbar {
 }
 
 .bloco {
-  padding: 12px;
+  padding: 14px;
   margin: 8px;
   background: #7d722b;
   border-radius: 10px;
@@ -50,15 +50,16 @@ body::-webkit-scrollbar {
   grid-template-columns: 50vw 50vw;
 }
 
-.bloco#sobre {
+#sobre {
   display: grid;
-  grid-template-columns: 65vw 35vw;
+  grid-template-columns: 60vw 40vw;
 }
-.bloco#sobre #minha-imagem {
+#sobre #minha-imagem {
   background: #627e23;
   border-radius: 10px;
+  margin: 5px;
 }
-.bloco#sobre img {
+#sobre img {
   height: 20%;
 }
 
@@ -86,6 +87,8 @@ header a:hover {
 }
 header nav ul {
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
 header nav ul li {
   background: #a9bf65;

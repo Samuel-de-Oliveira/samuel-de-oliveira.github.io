@@ -26,7 +26,7 @@ body::-webkit-scrollbar {
 }
 
 .bloco {
-  padding: 12px;
+  padding: 14px;
   margin: 8px;
   background: $main-color3;
   border-radius: 10px;
@@ -58,13 +58,14 @@ body::-webkit-scrollbar {
   grid-template-columns: 50vw 50vw;
 }
 
-.bloco#sobre {
+#sobre {
   display: grid;
-  grid-template-columns: 65vw 35vw;
+  grid-template-columns: 60vw 40vw;
 
   #minha-imagem {
     background: $main-color4;
     border-radius: 10px;
+    margin: 5px;
   }
 
   img {
@@ -98,6 +99,9 @@ header {
   nav {
     ul {
       display: flex;
+      align-items: center;
+      justify-content: center;
+  
       li {
       background: $main-color2;
       padding: 7px;
