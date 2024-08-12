@@ -50,7 +50,7 @@ body::-webkit-scrollbar {
   grid-template-columns: 50vw 50vw;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 720px) {
   .container {
     display: grid;
     grid-template-columns: 100vw;
@@ -73,7 +73,7 @@ ul {
   list-style: none;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 720px) {
   #sobre {
     display: grid;
     grid-template-columns: 100vw;
@@ -134,6 +134,9 @@ footer a:hover {
   color: #969696;
   text-decoration: underline;
   transition-duration: 0.3s;
+}
+footer a#repo, footer #endereco, footer #copyright {
+  font-size: 15pt;
 }
 
 /*# sourceMappingURL=style.css.map */
