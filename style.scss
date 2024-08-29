@@ -17,8 +17,11 @@ html {
 
 body {
   font-size: 16pt;
-  background: $main-color0;
   font-family: "Montserrat", "sans-serif";
+  background: $main-color0;
+  scrollbar-width: 0;
+  scroolbar-color: transparent;
+  overflow-y: scroll;
 }
 
 body::-webkit-scrollbar {
@@ -68,17 +71,17 @@ body::-webkit-scrollbar {
 
 #sobre {
   display: grid;
-  grid-template-columns: 60vw 40vw;
-
+  grid-template-columns: 60vw 30vw;
+  font-size: 20pt;
+  text-align: justify;
 
   #minha-imagem {
-    background: $main-color4;
-    border-radius: 10px;
-    margin: 5px;
-  }
 
-  img {
-    width: 20%;
+    img {
+      margin: 15px;
+      width: 30vw;
+      border-radius: 5px;
+    }
   }
 }
 
@@ -90,6 +93,15 @@ ul {
   #sobre {
     display: grid;
     grid-template-columns: 100vw;
+    text-align: justify;
+
+    #minha-imagem {
+      img {
+        width: 0;
+        margin: 0;
+        border-radius: 0;
+      }
+    }
   }
 }
 
