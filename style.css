@@ -146,5 +146,8 @@ footer a:hover {
 footer a#repo, footer #endereco, footer #copyright {
   font-size: 15pt;
 }
+footer #frase {
+  font-size: 12pt;
+}
 
 /*# sourceMappingURL=style.css.map */
