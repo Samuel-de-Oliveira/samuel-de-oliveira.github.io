@@ -61,14 +61,14 @@ body::-webkit-scrollbar {
 }
 #sobre {
   display: grid;
-  grid-template-columns: 60vw 30vw;
+  grid-template-columns: 60vw 35vw;
   font-size: 20pt;
   text-align: justify;
 }
 #sobre #minha-imagem img {
   margin: 15px;
-  width: 30vw;
-  border-radius: 5px;
+  width: 35vw;
+  border-radius: 10px;
 }
 
 ul {
