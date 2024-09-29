@@ -24,6 +24,12 @@ body {
   overflow-y: scroll;
 }
 
+@media (max-width: 700px) {
+  body {
+    font-size: 12pt;
+  }
+}
+
 body::-webkit-scrollbar {
   display: none;
 }
@@ -61,7 +67,7 @@ body::-webkit-scrollbar {
   grid-template-columns: 50vw 50vw;
 }
 
-@media (max-width: 720px) {
+@media (max-width: 700px) {
   .container {
     display: grid;
     grid-template-columns: 100vw;
@@ -89,15 +95,16 @@ ul {
    list-style: none;
 }
 
-@media (max-width: 720px) {
+@media (max-width: 700px) {
   #sobre {
     display: grid;
-    grid-template-columns: 90vw 5vw;
+    grid-template-columns: 88vw 3vw;
     font-size: 15pt;
     text-align: justify;
 
     #minha-imagem {
       img {
+        display: none;
         width:   0;
         height:  0;
         margin:  0;
