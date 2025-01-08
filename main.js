@@ -23,12 +23,12 @@ const components = {
          // Idade
          var idadeBox    = document.querySelector("#idade");
          const birthDate = 2005;
-         this.Age = `<b>Idade:</b> ${currentYear - birthDate} Anos`;
+         return (currentYear - birthDate);
       }
    },
 
    beforeMount() {
-      this.CalculateAge();
+      this.Age = this.CalculateAge();
    },
 };
 
