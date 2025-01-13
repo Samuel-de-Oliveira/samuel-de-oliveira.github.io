@@ -22,9 +22,8 @@
             <ul>
               <!-- TODO: Alterar o Menu Nav para conter as novas abas-->
                <li><a href="#info-pessoais">Informações Pessoais</a></li>
-               <li><a href="#info-contato">Contato</a></li>
                <li><a href="#info-academica">Formação</a></li>
-               <li><a href="#portifolio">Portifólio</a></li>
+               <li><a href="#certificados">Certificados e premiações</a></li>
                <li><a href="#experiencia">Experiência</a></li>
             </ul>
          </nav>
@@ -66,11 +65,11 @@
             <section class="bloco" id="info-contato">
                <h2 class="titulo">Informações de contato</h2>
                <ul>
-                  <li><b>Email:</b> samwolfg12@gmail.com</li>
-                  <li><b>Github:</b> <a href="https://github.com/Samuel-de-Oliveira">@Samuel-de-Oliveira</a></li>
-                  <li><b>LinkedIn:</b> <a href="https://linkedin.com/in/s-de-Oliveira">@s-de-oliveira</a></li>
-                  <li><b>Whatsapp:</b> (82) 99834-9253</li>
-                  <li><b>Instagram:</b> <a href="https://instagram.com/Wolfito_sam">@wolfito-sam</a></li>
+                  <li><b>Email:</b> {{ EMail }}</li>
+                  <li><b>Github:</b> <a href="https://github.com/Samuel-de-Oliveira">{{ Github }}</a></li>
+                  <li><b>LinkedIn:</b> <a href="https://linkedin.com/in/s-de-Oliveira">{{ Linkedin }}</a></li>
+                  <li><b>Whatsapp:</b> {{ phoneNumber }}</li>
+                  <li><b>Instagram:</b> <a href="https://instagram.com/Wolfito_sam">{{ Instagram }}</a></li>
                </ul>
             </section>
          </div>
@@ -80,7 +79,7 @@
             <section class="bloco" id="info-academica">
                <h2 class="titulo">Minha grade acadêmica</h2>
                <ul>
-                  <li><b>● Licenciatura em Matemática (UNEAL | Universidade Estadual de Alagoas) <i>1º Periodo</i></b></li>
+                  <li><b>● Licenciatura em Matemática (UNEAL | Universidade Estadual de Alagoas) <i>{{ PeriodoMat }}º Periodo</i></b></li>
                   <ul>
                      <li><i>Jul. 2024 - Atualmente</i></li>
                      <li>No curso estou me capacitando a trabalhar como professor de matemática
@@ -165,8 +164,8 @@
                 <br>
                 <li>
                   <b>● Raspberry Pi básico para IoT - Moodle IFRS</b><br>
-                  Nesse curs aprendi sobre a utilização da plataforma Rapberry Pi para sistemas
-                  de Internet das Coisas (IoT), apenas o básico.
+                  Nesse curso aprendi sobre a utilização da plataforma Rapberry Pi para sistemas
+                  de Internet das Coisas (IoT), apenas o básico como a criação de um sistema de monitoramento inteligente.
                 </li>
               </ul>
             </section>
@@ -195,7 +194,9 @@
                      <b>● Assistente de TI - Popular Alimentos</b>
                      <ul>
                         <li>
-                           <i>Dez. 2024 - Atualmente</i>
+                           <i>- Dez. 2024 - Atualmente</i>
+                        </li>
+                        <li>
                            Trabalho com a manuntenção dos componentes de Hardware
                            e soluções tecnológicas na empresa
                            <a href="https://popularalimentos.com.br"> Popular Alimentos.
@@ -208,7 +209,7 @@
                      <b>● Auxiliar de Marketing (Design gráfico) - Popular Alimentos</b>
                      <ul>
                         <li>
-                           <i>Ago. 2023 - Dez. 2024</i>
+                           <i>- Ago. 2023 - Dez. 2024</i>
                         </li>
                         <li>
                            Esse é meu trabalho atual, trabalhando na

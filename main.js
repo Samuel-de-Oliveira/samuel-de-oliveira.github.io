@@ -9,7 +9,14 @@ if (window.screen.width <= 700) {
 const components = {
    data() {
       return {
-         Age: Vue.ref(0),
+         Age:        Vue.ref(0),
+         PeriodoMat: Vue.ref(2),
+
+         EMail:  Vue.ref("samwolfg12@gmail.com"),
+         phoneNumber: Vue.ref("(82) 99834-9253"),
+         Github:  Vue.ref("@Samuel-de-oliveira"),
+         Linkedin:     Vue.ref("@s-de-oliveira"),
+         Instagram:      Vue.ref("@wolfito-sam"),
       }
    },
 
