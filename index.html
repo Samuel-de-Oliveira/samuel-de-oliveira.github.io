@@ -1,259 +1,276 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-	<head>
-		<title>Samuel de Oliveira</title>
 
-      <!-- Meta tags-->
-		<meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+   <title>Samuel de Oliveira</title>
 
-      <!-- Vue.js -->
-      <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+   <!-- Meta tags-->
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-      <!-- Styles -->
-      <link href="style.css" rel="stylesheet">
-	</head>
-	<body id="App">
+   <!-- Vue.js -->
+   <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 
-      <!-- Cabeçalho -->
-      <header>
-         <h1 class="titulo text-center">Olá, me chamo Samuel!</h1>
-         <nav>
-            <ul>
-              <!-- TODO: Alterar o Menu Nav para conter as novas abas-->
-               <li><a href="#info-pessoais">Informações Pessoais</a></li>
-               <li><a href="#info-academica">Formação</a></li>
-               <li><a href="#certificados">Certificados e premiações</a></li>
-               <li><a href="#experiencia">Experiência</a></li>
-            </ul>
-         </nav>
-      </header>
+   <!-- Styles -->
+   <link href="style.css" rel="stylesheet">
+</head>
 
-      <!-- Parte principal -->
-      <main>
-         <section class="bloco" id="sobre">
-            <div>
+<body id="App">
+
+   <!-- Cabeçalho -->
+   <header>
+      <h1 class="titulo">Olá, me chamo Samuel!</h1>
+      <nav>
+         <ul>
+            <!-- TODO: Alterar o Menu Nav para conter as novas abas-->
+            <li><a href="#info-pessoais">Informações Pessoais</a></li>
+            <li><a href="#info-academica">Formação</a></li>
+            <li><a href="#certificados">Certificados</a></li>
+            <li><a href="#premiacoes">Premiações</a></li>
+            <li><a href="#experiencia">Experiência</a></li>
+         </ul>
+      </nav>
+   </header>
+
+   <!-- Parte principal -->
+   <main>
+      <section class="bloco" id="sobre">
+         <div>
             <p>Olá, me chamo Samuel, um jovem sempre disposto a aprender coisas novas e
-            descobrir mais sobre esse mundo. Atualmente trabalho na área de tecnologia
-            como Assistente de TI, mas também atuo como desenvolvedor de sistemas embarcados,
-            Web e Python, entretanto no futuro pretendo trabalhar como professor de ensino
-            fundamental e médio, afim de ensinar matemática e lógica de programação para os
-            meus alunos.</p>
+               descobrir mais sobre esse mundo. Atualmente trabalho na área de tecnologia
+               como Assistente de TI, mas também atuo como desenvolvedor de sistemas embarcados,
+               Web e Python, entretanto no futuro pretendo trabalhar como professor de ensino
+               fundamental e médio, afim de ensinar matemática e lógica de programação para os
+               meus alunos.</p>
             <p>Este site serve como curriculo online, logo abaixo você verá minhas principais
-            habilidades e onde eu já trabalhei ou estou trabalhando atualmente.</p>
-            </div>
-            <div id="minha-imagem">
-               <img src="https://avatars.githubusercontent.com/u/81493939?v=4">
-               <!-- <sub>Essa é uma imagem minha.</sub> -->
-            </div>
+               habilidades e onde eu já trabalhei ou estou trabalhando atualmente.</p>
+         </div>
+         <div id="minha-imagem">
+            <img src="https://avatars.githubusercontent.com/u/81493939?v=4">
+            <!-- <sub>Essa é uma imagem minha.</sub> -->
+         </div>
+      </section>
+
+      <div class="container">
+         <!-- Informações pessoais -->
+         <section class="bloco" id="info-pessoais">
+            <h2 class="titulo">Informações pessoais</h2>
+            <ul>
+               <li><b>Gênero:</b> Masculino</li>
+               <li><b>Idade:</b> {{ Age }} Anos</li>
+               <li><b>Estado Civil:</b> Solteiro</li>
+               <li><b>Cidade:</b> Arapiraca</li>
+               <li><b>Estado:</b> Alagoas</li>
+            </ul>
          </section>
 
-         <div class="container">
-            <!-- Informações pessoais -->
-            <section class="bloco" id="info-pessoais">
-               <h2 class="titulo">Informações pessoais</h2>
-               <ul>
-                  <li><b>Gênero:</b> Masculino</li>
-                  <li><b>Idade:</b> {{ Age }} Anos</li>
-                  <li><b>Estado Civil:</b> Solteiro</li>
-                  <li><b>Cidade:</b> Arapiraca</li>
-                  <li><b>Estado:</b> Alagoas</li>
-               </ul>
-            </section>
+         <!-- Informações de contato -->
+         <section class="bloco" id="info-contato">
+            <h2 class="titulo">Informações de contato</h2>
+            <ul>
+               <li><b>Email:</b> {{ EMail }}</li>
+               <li><b>Github:</b> <a href="https://github.com/Samuel-de-Oliveira">{{ Github }}</a></li>
+               <li><b>LinkedIn:</b> <a href="https://linkedin.com/in/s-de-Oliveira">{{ Linkedin }}</a></li>
+               <li><b>Whatsapp:</b> {{ phoneNumber }}</li>
+               <li><b>Instagram:</b> <a href="https://instagram.com/Wolfito_sam">{{ Instagram }}</a></li>
+            </ul>
+         </section>
+      </div>
 
-            <!-- Informações de contato -->
-            <section class="bloco" id="info-contato">
-               <h2 class="titulo">Informações de contato</h2>
+      <div class="container">
+         <!-- Formação acadêmica -->
+         <section class="bloco" id="info-academica">
+            <h2 class="titulo">Minha grade acadêmica</h2>
+            <ul>
+               <li><b>● Licenciatura em Matemática (UNEAL | Universidade Estadual de Alagoas) <i>{{ PeriodoMat }}º
+                        Periodo</i></b></li>
                <ul>
-                  <li><b>Email:</b> {{ EMail }}</li>
-                  <li><b>Github:</b> <a href="https://github.com/Samuel-de-Oliveira">{{ Github }}</a></li>
-                  <li><b>LinkedIn:</b> <a href="https://linkedin.com/in/s-de-Oliveira">{{ Linkedin }}</a></li>
-                  <li><b>Whatsapp:</b> {{ phoneNumber }}</li>
-                  <li><b>Instagram:</b> <a href="https://instagram.com/Wolfito_sam">{{ Instagram }}</a></li>
-               </ul>
-            </section>
-         </div>
-
-         <div class="container">
-            <!-- Formação acadêmica -->
-            <section class="bloco" id="info-academica">
-               <h2 class="titulo">Minha grade acadêmica</h2>
-               <ul>
-                  <li><b>● Licenciatura em Matemática (UNEAL | Universidade Estadual de Alagoas) <i>{{ PeriodoMat }}º Periodo</i></b></li>
-                  <ul>
-                     <li><i>Jul. 2024 - Atualmente</i></li>
-                     <li>No curso estou me capacitando a trabalhar como professor de matemática
+                  <li><i>Jul. 2024 - Atualmente</i></li>
+                  <li>No curso estou me capacitando a trabalhar como professor de matemática
                      afim de ensinar não só matemática como também áreas que envolvam lógica como
                      Programação e Robótica.</li>
-                  </ul>
-                  <li><b>● Hardware e Robótica (Microcamp)</b></li>
-                  <ul>
-                     <li><i>Out. 2019 - Jun. 2023</i></li>
-                     <li>Estudei nesse curso sobre Arquiteturas de Hardware e os fundamentos
+               </ul>
+               <li><b>● Hardware e Robótica (Microcamp)</b></li>
+               <ul>
+                  <li><i>Out. 2019 - Jun. 2023</i></li>
+                  <li>Estudei nesse curso sobre Arquiteturas de Hardware e os fundamentos
                      que envolvem a robótica e sistemas embarcados. As principais tecnologias
                      que aprendi no curso foram: <b>Hardware e manuntenção de computadores</b>,
                      noções de <b>Eletroeletônica</b>, <b>C++</b> para desenvolver projetos com
                      <b>Arduino</b>, <b>Python</b> e <b>Shell script</b> para desenvolver projetos com
                      <b>Raspberry pi</b>, <b>Linux</b>, versionamento com <b>Git</b> e Impressão 3D
-                     com <b>Blender</b>.</li>
-                  </ul>
-               </ul>
-            </section>
-
-            <!-- Portifólio -->
-            <section class="bloco" id="portifolio">
-               <h2 class="titulo">Portifólios e projetos</h2>
-               <ul>
-                  <li><b>● Portifólio de desenvolvimento web:</b></li>
-                  <ul>
-                     <li>
-                        Criei uma página onde listo exemplos de sites que eu inventei, nada muito profissional,
-                        serve apenas para mostrar minhas habilidades. Para acessar essa página é bem simples
-                        basta apenas 
-                        <a href="https://samuel-de-oliveira.github.io/Web-Examples">clicar aqui</a>.
-                     </li>
-                     <li>
-                        Nos projetos eu utilizo: <b>HTML</b>, <b>Sass CSS</b>, <b>Javascript</b>, <b>Vue.js</b> e <b>Bootstrap</b>.
-                     </li>
-                  </ul>
-                  <li><b>● CanUserTimer:</b></li>
-                  <ul>
-                     <li>
-                        CanUseTimer é um cronometro de speedcubing de código aberto feito utilizando interface
-                        CLI, o que o torna leve prático. E sem contar que ele é multiplataforma, Ou seja,
-                        funciona para várias plataformas como Windows, Linux e MacOs. Para saber mais sobre o
-                        projeto basta que 
-                        <a href="https://github.com/Samuel-de-Oliveira/CanUseTimer">clique aqui</a>, assim
-                        você pode descobrir como ele funciona e obter links de download.
-                     </li>
-                     <li>
-                        O projeto utiliza <b>Python</b> para funcionar e o instalador para Linux funciona
-                        utilizando <b>Shell Script</b>.
-                     </li>
-                  </ul>
-               </ul>
-            </section>
-         </div>
-
-         <div class="container">
-            <!-- Certificados -->
-            <section class="bloco" id="certificados">
-              <h2 class="titulo">Certificados</h2>
-              <ul>
-                  <li>
-                     <b>● Programa de Iniciação Cietífica Jr. da OBMEP - IMPA</b><br>
-                     Programa que participei ao receber minha premiação na OBMEP, nele
-                     aprendi sobre matemática aplicada e suas principais utilidades por
-                     volta de 1 ano.
+                     com <b>Blender</b>.
                   </li>
-                  <br>
-                <li>
+               </ul>
+            </ul>
+         </section>
+
+         <!-- Portifólio -->
+         <section class="bloco" id="portifolio">
+            <h2 class="titulo">Portifólios e projetos</h2>
+            <ul>
+               <li><b>● Portifólio de desenvolvimento web:</b></li>
+               <ul>
+                  <li>
+                     Criei uma página onde listo exemplos de sites que eu inventei, nada muito profissional,
+                     serve apenas para mostrar minhas habilidades. Para acessar essa página é bem simples
+                     basta apenas
+                     <a href="https://samuel-de-oliveira.github.io/Web-Examples">clicar aqui</a>.
+                  </li>
+                  <li>
+                     Nos projetos eu utilizo: <b>HTML</b>, <b>Sass CSS</b>, <b>Javascript</b>, <b>Vue.js</b> e
+                     <b>Bootstrap</b>.
+                  </li>
+               </ul>
+               <li><b>● CanUserTimer:</b></li>
+               <ul>
+                  <li>
+                     CanUseTimer é um cronometro de speedcubing de código aberto feito utilizando interface
+                     CLI, o que o torna leve prático. E sem contar que ele é multiplataforma, Ou seja,
+                     funciona para várias plataformas como Windows, Linux e MacOs. Para saber mais sobre o
+                     projeto basta que
+                     <a href="https://github.com/Samuel-de-Oliveira/CanUseTimer">clique aqui</a>, assim
+                     você pode descobrir como ele funciona e obter links de download.
+                  </li>
+                  <li>
+                     O projeto utiliza <b>Python</b> para funcionar e o instalador para Linux funciona
+                     utilizando <b>Shell Script</b>.
+                  </li>
+               </ul>
+            </ul>
+         </section>
+      </div>
+
+      <!-- Certificados -->
+      <div class="container">
+         <!-- Certificados de pesquisa e educação-->
+         <section class="bloco" id="certificados">
+            <h2 class="titulo">Certificados de persquisa e educação</h2>
+            <ul>
+               <li>
+                  <b>● Programa de Iniciação Cietífica Jr. da OBMEP - IMPA</b><br>
+                  Programa que participei ao receber minha premiação na OBMEP, nele
+                  aprendi sobre matemática aplicada e suas principais utilidades por
+                  volta de 1 ano.
+               </li>
+               <br>
+               <li>
                   <b>● Inglês - Nivel B2 - EF Set</b><br>
                   Certificado do meu nivel de inglês, que é de B2 (Intermediário).
                   Caso queira pode Acessar
                   <a href="https://cert.efset.org/dcZvbv">Acessar a credencial</a>
                   do certificado basta clicar no link anterior.
-                </li>
-                <br>
-                <li>
+               </li>
+            </ul>
+         </section>
+
+         <!-- Certificados de tecnologia -->
+         <section class="bloco" id="certificados">
+            <h2 class="titulo">Certificados de tecnologia</h2>
+            <ul>
+               <li>
                   <b>● Javascript: Fundamentos para Desenvolvimento Web Interativo
-                  - Moodle IFRS</b><br>
+                     - Moodle IFRS</b><br>
                   Curso feito pelo sistema Moodle do IFRS, afim de aprender sobre Javascript
-                  e suas aplicações. 
-                </li>
-                <br>
-                <li>
+                  e suas aplicações.
+               </li>
+               <br>
+               <li>
                   <b>● Raspberry Pi básico para IoT - Moodle IFRS</b><br>
                   Nesse curso aprendi sobre a utilização da plataforma Rapberry Pi para sistemas
-                  de Internet das Coisas (IoT), apenas o básico como a criação de um sistema de monitoramento inteligente.
-                </li>
-              </ul>
-            </section>
+                  de Internet das Coisas (IoT), apenas o básico como a criação de um sistema de monitoramento
+                  inteligente.
+               </li>
+            </ul>
+         </section>
+      </div>
 
-            <!-- Premiações -->
-            <section class="bloco" id="premiacoes">
-              <h2 class="titulo">Premiações</h2>
-              <ul>
-                <li>
-                  <b>● Medalha de Bronze - Nível 3 - 17º OBMEP</b><br>
-                  Fiz a prova da 17º Olimpíada Brasileira de Matemática das Escolas
-                  Públicas e meu resultado foi uma medalha de bronze.
-                  Caso queira ver meu nome na lista de premiados,
-                  <a href="http://premiacao.obmep.org.br/17obmep/verRelatorioPremiadosBronze-AL.do.htm">Clique aqui</a>
-                  e procure pelo 15º colocado do nível 3.
-                </li>
-              </ul>
-            </section>
-         </div>
+      <!-- Premiações -->
+      <section class="bloco" id="premiacoes">
+         <h2 class="titulo">Premiações</h2>
+         <ul>
+            <li>
+               <b>● Medalha de Bronze - Nível 3 - 17º OBMEP</b><br>
+               Fiz a prova da 17º Olimpíada Brasileira de Matemática das Escolas
+               Públicas e meu resultado foi uma medalha de bronze.
+               <br>
+               Caso queira ver meu nome na lista de premiados,
+               <a href="http://premiacao.obmep.org.br/17obmep/verRelatorioPremiadosBronze-AL.do.htm">Clique aqui</a>
+               e procure pelo 15º colocado do nível 3.
+            </li>
+         </ul>
+      </section>
 
-         <!-- Informações de experiência -->
-         <section class="bloco" id="experiencia">
-               <h2 class="titulo">Minha experiência</h2>
+      <!-- Informações de experiência -->
+      <section class="bloco" id="experiencia">
+         <h2 class="titulo">Minha experiência</h2>
+         <ul>
+            <li>
+               <b>● Assistente de TI - Popular Alimentos</b>
                <ul>
                   <li>
-                     <b>● Assistente de TI - Popular Alimentos</b>
-                     <ul>
-                        <li>
-                           <i>- Dez. 2024 - Atualmente</i>
-                        </li>
-                        <li>
-                           Trabalho com a manuntenção dos componentes de Hardware
-                           e soluções tecnológicas na empresa
-                           <a href="https://popularalimentos.com.br"> Popular Alimentos.
-                           (INAP)</a> que antes trabalhava com o cargo de designer
-                           gráfico.
-                        </li>
-                     </ul>
+                     <i>- Dez. 2024 - Atualmente</i>
                   </li>
                   <li>
-                     <b>● Auxiliar de Marketing (Design gráfico) - Popular Alimentos</b>
-                     <ul>
-                        <li>
-                           <i>- Ago. 2023 - Dez. 2024</i>
-                        </li>
-                        <li>
-                           Esse é meu trabalho atual, trabalhando na
-                           <a href="https://popularalimentos.com.br">Indústria alimentícia Popular LTDA. (INAP)</a>
-                           atuando como <b>designer gráfico</b> e <b>jovem aprendiz</b>. Dentro do trabalho
-                           desenvolvo banners, camisas, adesivos e dentre outros tipos de artes
-                           para eventos patrocinados da empresa ou até designs internos como
-                           fardamento, placas de segurança e posts no Whatsapp.
-                        </li>
-                        <li>
-                           No trabalho utilizo <b>Adobe Illustrator</b> para ilustarções,
-                           <b>Adobe Photoshop</b> para editar imagens e já utilizei <b>Blender</b> em algumas
-                           situações.
-                        </li>
-                     </ul>
+                     Trabalho com a manuntenção dos componentes de Hardware
+                     e soluções tecnológicas na empresa
+                     <a href="https://popularalimentos.com.br"> Popular Alimentos.
+                        (INAP)</a> que antes trabalhava com o cargo de designer
+                     gráfico.
                   </li>
                </ul>
-         </section>
-      </main>
-      
-      <!-- Rodapé -->
-      <footer>
-         <div id="redes">
-            <h3>Minhas redes:</h3>
-            <!-- Github -->
-            <a href="https://github.com/Samuel-de-Oliveira/" id="github">
-               <img src="img/github.svg">
-            </a>
-            <!-- LinkedIn -->
-            <a href="https://www.linkedin.com/in/s-de-oliveira/" id="linkedin">
-               <img src="img/linkedin.svg">
-            </a>
-         </div>
-         <hr>
-         <a href="https://github.com/Samuel-de-Oliveira/samuel-de-oliveira.github.io" id="repo">Ver repositório desse site</a>
-         <div id="endereco">
-            Arapiraca/Alagoas - Brazil
-         </div>
-         <p id="copyright"><b>Samuel de Oliveira ® | 2024</b></p>
-         <p id="frase">Jesus está voltando!</p>
-      </footer>
+            </li>
+            <li>
+               <b>● Auxiliar de Marketing (Design gráfico) - Popular Alimentos</b>
+               <ul>
+                  <li>
+                     <i>- Ago. 2023 - Dez. 2024</i>
+                  </li>
+                  <li>
+                     Esse é meu trabalho atual, trabalhando na
+                     <a href="https://popularalimentos.com.br">Indústria alimentícia Popular LTDA. (INAP)</a>
+                     atuando como <b>designer gráfico</b> e <b>jovem aprendiz</b>. Dentro do trabalho
+                     desenvolvo banners, camisas, adesivos e dentre outros tipos de artes
+                     para eventos patrocinados da empresa ou até designs internos como
+                     fardamento, placas de segurança e posts no Whatsapp.
+                  </li>
+                  <li>
+                     No trabalho utilizo <b>Adobe Illustrator</b> para ilustarções,
+                     <b>Adobe Photoshop</b> para editar imagens e já utilizei <b>Blender</b> em algumas
+                     situações.
+                  </li>
+               </ul>
+            </li>
+         </ul>
+      </section>
+   </main>
 
-   </body>
+   <!-- Rodapé -->
+   <footer>
+      <div id="redes">
+         <h3>Minhas redes:</h3>
+         <!-- Github -->
+         <a href="https://github.com/Samuel-de-Oliveira/" id="github">
+            <img src="img/github.svg">
+         </a>
+         <!-- LinkedIn -->
+         <a href="https://www.linkedin.com/in/s-de-oliveira/" id="linkedin">
+            <img src="img/linkedin.svg">
+         </a>
+      </div>
+      <hr>
+      <a href="https://github.com/Samuel-de-Oliveira/samuel-de-oliveira.github.io" id="repo">Ver repositório desse
+         site</a>
+      <div id="endereco">
+         Arapiraca/Alagoas - Brazil
+      </div>
+      <p id="copyright"><b>Samuel de Oliveira ® | 2024</b></p>
+      <p id="frase">Jesus está voltando!</p>
+   </footer>
 
-   <!-- Script -->
-   <script src="main.js"></script>
+</body>
+
+<!-- Script -->
+<script src="main.js"></script>
+
 </html>

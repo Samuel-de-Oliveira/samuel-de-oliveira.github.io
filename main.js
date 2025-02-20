@@ -13,7 +13,7 @@ const components = {
          PeriodoMat: Vue.ref(2),
 
          EMail:  Vue.ref("samwolfg12@gmail.com"),
-         phoneNumber: Vue.ref("(82) 99834-9253"),
+         phoneNumber: Vue.ref("(82) 99912-9253"),
          Github:  Vue.ref("@Samuel-de-oliveira"),
          Linkedin:     Vue.ref("@s-de-oliveira"),
          Instagram:      Vue.ref("@wolfito-sam"),
