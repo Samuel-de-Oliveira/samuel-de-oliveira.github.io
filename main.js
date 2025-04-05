@@ -50,6 +50,21 @@ const components = {
 
          return Period;
      },
+
+     whatsappRedirect() {
+       window.location.replace(
+         'https://wa.me/5582999129253'
+       );
+     },
+
+     notWorking() {
+       swal({
+         title: 'Waring',
+         text:  'This buttton isn\'t working yet!',
+         icon:  'error',
+         timer: 5000,
+       });
+     },
    },
 
    beforeMount() {

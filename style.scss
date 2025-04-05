@@ -37,6 +37,7 @@ body::-webkit-scrollbar {
   background: $main-color3;
   border-radius: 10px;
   color: white;
+  transition-duration: 0.15s;
 
   ul {
     padding: 8px;
@@ -52,7 +53,7 @@ body::-webkit-scrollbar {
     transition-duration: 0.5s;
   }
 } .bloco:hover {
-  transition-duration: 0.2s;
+  transition-duration: 0.3s;
   background: $main-color5;
 }
 
@@ -105,6 +106,7 @@ header {
   a {
     color: black;
     text-decoration: none;
+    transition-duration: 0.2s;
   } a:hover {
     color: #222222; 
     text-decoration: underline; 
@@ -118,11 +120,12 @@ header {
       justify-content: center;
   
       li {
-      background: $main-color2;
-      padding: 7px;
-      border-radius: 5px;
-      margin-left:  15px;
-      margin-right: 15px;
+        background: $main-color2;
+        padding: 7px;
+        border-radius: 5px;
+        margin-left:  15px;
+        margin-right: 15px;
+        transition-duration: 0.2s;
       } li:hover {
         background: $main-color0;
         color: white;
@@ -158,6 +161,14 @@ footer {
 
   #frase {
     font-size: 12pt;
+  }
+
+  .whatsapp {
+    cursor: pointer;
+    position: fixed;
+    bottom:    15px;
+    right:     15px;
+    z-index:   9999;
   }
 }
 
@@ -203,4 +214,9 @@ footer {
     display: grid;
     grid-template-columns: 100vw;
   }
+}
+
+//// Sweet alert ////
+.swal-modal {
+  background: $main-color0;
 }

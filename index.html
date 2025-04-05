@@ -8,8 +8,9 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-   <!-- Vue.js -->
+   <!-- Modulos -->
    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+   <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
    <!-- Script -->
    <script src="main.js" async></script>
@@ -291,8 +292,12 @@
       </div>
       <p id="copyright"><b>Samuel de Oliveira ® | 2024</b></p>
       <p id="frase">Jesus está voltando!</p>
+      
+      <!-- Div do Zap -->
+      <div class="whatsapp">
+        <img @click="whatsappRedirect()" src="img/whatsapp.svg" width="96px" alt="Fale comigo pelo Whatsapp!" title="Fale comigo pelo Whatsapp!">
+      </div>
    </footer>
 
 </body>
-
 </html>
