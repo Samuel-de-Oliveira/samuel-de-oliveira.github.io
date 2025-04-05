@@ -44,7 +44,7 @@ body::-webkit-scrollbar {
   }
 
   a {
-    color: #cccccc;
+    color: $main-color0;
     text-decoration: none;
   } a:hover {
     color: $main-color1;
@@ -95,7 +95,7 @@ ul {
 header {
   background: $main-color4;
   padding: 16px;
-  color: white;
+  color:  white;
 
   h1 {
     padding: 3px;
