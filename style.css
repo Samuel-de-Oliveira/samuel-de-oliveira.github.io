@@ -9,9 +9,10 @@ html {
 }
 
 body {
-  font-size: 16pt;
+  font-size: 13pt;
   font-family: "Montserrat", "sans-serif";
-  background: #efffa7;
+  text-align: justify-all;
+  background: #a08ad2;
   scrollbar-width: 0;
   overflow-y: scroll;
 }
@@ -23,12 +24,13 @@ body::-webkit-scrollbar {
 .bloco {
   padding: 14px;
   margin: 8px;
-  background: #7d722b;
+  text-align: justify-all;
+  background: #45268e;
   border-radius: 10px;
   color: white;
 }
 .bloco ul {
-  padding: 7px;
+  padding: 8px;
   font-size: 14.8pt;
 }
 .bloco a {
@@ -39,6 +41,11 @@ body::-webkit-scrollbar {
   color: #e0d084;
   text-decoration: underline;
   transition-duration: 0.5s;
+}
+
+.bloco:hover {
+  transition-duration: 0.2s;
+  background: #220e53;
 }
 
 .titulo {
@@ -84,7 +91,7 @@ header a {
   text-decoration: none;
 }
 header a:hover {
-  color: white;
+  color: #222222;
   text-decoration: underline;
   transition-duration: 0.2s;
 }
@@ -101,7 +108,7 @@ header nav ul li {
   margin-right: 15px;
 }
 header nav ul li:hover {
-  background: #7d722b;
+  background: #a08ad2;
   color: white;
   transition-duration: 0.2s;
 }

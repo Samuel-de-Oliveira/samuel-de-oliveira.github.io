@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
-$main-color0: #efffa7;
+$main-color0: #a08ad2;
 $main-color1: #e0d084; // Cor reversa de: #ccdf86
 $main-color2: #a9bf65;
-$main-color3: #7d722b; // Cor reversa de: #869e44
+$main-color3: #45268e; // Cor reversa de: #869e44
 $main-color4: #627e23;
+$main-color5: #220e53;
 
 * {
   margin:  0;
@@ -16,8 +17,9 @@ html {
 }
 
 body {
-  font-size: 16pt;
+  font-size: 13pt;
   font-family: "Montserrat", "sans-serif";
+  text-align: justify-all;
   background: $main-color0;
   scrollbar-width: 0;
   overflow-y: scroll;
@@ -31,12 +33,13 @@ body::-webkit-scrollbar {
 .bloco {
   padding: 14px;
   margin: 8px;
+  text-align: justify-all;
   background: $main-color3;
   border-radius: 10px;
   color: white;
 
   ul {
-    padding: 7px;
+    padding: 8px;
     font-size: 14.8pt;
   }
 
@@ -48,6 +51,9 @@ body::-webkit-scrollbar {
     text-decoration: underline;
     transition-duration: 0.5s;
   }
+} .bloco:hover {
+  transition-duration: 0.2s;
+  background: $main-color5;
 }
 
 .titulo {
@@ -100,7 +106,7 @@ header {
     color: black;
     text-decoration: none;
   } a:hover {
-    color: white; 
+    color: #222222; 
     text-decoration: underline; 
     transition-duration: 0.2s;
   }
@@ -118,7 +124,7 @@ header {
       margin-left:  15px;
       margin-right: 15px;
       } li:hover {
-        background: $main-color3;
+        background: $main-color0;
         color: white;
         transition-duration: 0.2s;
       }
