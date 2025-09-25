@@ -1,3 +1,5 @@
+// Código Javascript
+
 // Remover foto e navbar para dispositivos móveis
 if (window.screen.width <= 700) {
    let photo  = document.querySelector("#minha-imagem");
