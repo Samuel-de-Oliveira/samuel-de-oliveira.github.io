@@ -15,7 +15,6 @@ const components = {
          // Vai ser calculado
          Age:        Vue.ref(0),
          PeriodoMat: Vue.ref(0),
-         AnoIFAL:    Vue.ref(0),
          
          // Não é calculado
          EMail:  Vue.ref("samwolfg12@gmail.com"),
@@ -52,15 +51,6 @@ const components = {
          } 
 
          return Period;
-     },
-
-     CalculateYearIFAL() {
-      const currentDate = new Date();
-      const currentYear = currentDate.getFullYear();
-      const startDate   = 2025;
-      let IFALYear      = (currentYear - startDate) + 1;
-
-      return IFALYear;
      },
 
      whatsappRedirect() {
