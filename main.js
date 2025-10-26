@@ -82,10 +82,6 @@ const components = {
       this.PeriodoMat = Vue.ref(
         this.CalculatePeriodMath()
       );
-
-      this.AnoIFAL = Vue.ref(
-        this.CalculateYearIFAL()
-      );
    },
 };
 
