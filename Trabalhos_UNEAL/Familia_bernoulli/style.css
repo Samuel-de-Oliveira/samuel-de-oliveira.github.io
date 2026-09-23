@@ -1,14 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
 :root {
-    --UI-White: #dcdcdc;
+    --UI-White: #eeeeee;
     --UI-Black: #222222;
-    --my-blue: #2d5d9d;
+    --my-blue:  #2d5d9d;
 }
 
 * {
     margin:  0;
     padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {
@@ -23,7 +27,32 @@ header {
     color: var(--UI-White);
     background-color: var(--my-blue);
 
+    padding: 20px;
+}
+
+main {
+    margin: 10px;
+    padding: 20px;
+}
+
+footer {
+    color: var(--UI-White);
+    background-color: var(--my-blue);
+
     padding: 10px;
+}
+
+.box-img {
+    text-align: center;
+}
+
+#arvore {
+    width: 70vw;
+}
+
+a {
+    color: var(--UI-White);
+    text-decoration: underline;
 }
 
 h1, h2, h3 {
@@ -32,6 +61,10 @@ h1, h2, h3 {
 
 @media (max-width: 700px) {
     body {
-        font-size: 14pt;
+        font-size: 12pt;
+    }
+
+    #arvore {
+        width: 85vw;
     }
 }
